@@ -154,4 +154,19 @@
 			carriage return, tab, etc  which instructed the computer to do 
 			<emphasis>visual</emphasis> adjustments to the displayed text.
 			</para>
+			<para>
+			At first, there was no standardised way of assigning numbers to 
+			the characters, and almost each and computer came with its own 
+			system of character-number mapping. However, when people started 
+			transferring data between computers they realised that they had 
+			to have a standardised way of representing characters, and thus 
+			they came up with a system which mapped the basic Latin characters, 
+			punctuations and control characters to the numbers ranging from 
+			0-127. <!-- Insert some brief ideas on binary mathematics - reason 
+			behind 128 numbers --> This was called <acronym>ASCII</acronym>,
+			which is an acronym for "American Standard Code for Information 
+			Interchange". ASCII was formally introduced as a standard in 
+			1963, and is probably one of the most successful software standard 
+			to be ever released.
+			</para>
 </book>
