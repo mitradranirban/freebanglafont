@@ -4,47 +4,154 @@
 
 
 <book>
-	<bookinfo>
-		<title>Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font</title>
-		<authorgroup>
-			<author>
-				<firstname>Sayamindu</firstname> <surname>Dasgupta</surname>
-				<affiliation>
-					<address><email>Sayamindu Dasgupta</email></address>
-					<orgname>Ankur Bangla Group</orgname>
-				</affiliation>
-			</author>
-		</authorgroup>
+<bookinfo>
+	<title>
+	Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font
+	</title>
+	<authorgroup>
+		<author>
+			<firstname>Sayamindu</firstname> <surname>Dasgupta</surname>
+			<affiliation>
+				<address><email>Sayamindu Dasgupta</email></address>
+				<orgname>Ankur Bangla Group</orgname>
+			</affiliation>
+		</author>
+	</authorgroup>
 
-		<edition>Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font, version 0.01</edition>
+	<edition>
+	Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font, version 0.01
+	</edition>
 
 			
-		<copyright>
-			<year>2004</year>
-			<holder>
-				Sayamindu Dasgupta,
-			</holder>
-		</copyright>
-
+	<copyright>
+		<year>2004</year>
+		<holder>
+			Sayamindu Dasgupta
+		</holder>
+	</copyright>
 		<legalnotice>
-			<para>
-				Permission is granted to copy, distribute and/or modify this document under the terms of the 
-				GNU Free Documentation License, Version 1.1 or any later version published by the Free 
-				Software Foundation; with no Invariant Sections , with no Front-Cover Texts , and with no 
-				Back-Cover Texts . A copy of the license is located at 
-				<ulink url="http://www.gnu.org/licenses/fdl.html">http://www.gnu.org/licences/fdl.html</ulink>.
-			</para>
+		<para>
+		Permission is granted to copy, distribute and/or modify this document 
+		under the terms of the GNU Free Documentation License, Version 1.1 or 
+		any later version published by the Free Software Foundation; with no 
+		Invariant Sections , with no Front-Cover Texts , and with no Back-Cover 
+		Texts . A copy of the license is located at 
+		<ulink url="http://www.gnu.org/licenses/fdl.html">
+		http://www.gnu.org/licences/fdl.html</ulink>.
+		</para>
 		</legalnotice>
-							
-					    
-		
-		
 		<subjectset>
 			<subject><subjectterm>Fonts</subjectterm></subject>
 			<subject><subjectterm>Typography</subjectterm></subject>
 			<subject><subjectterm>Localization</subjectterm></subject>
 		</subjectset>
-		
 	</bookinfo>
 
+	<preface id="preface">
+		<title>Foreword</title>
+		<para>
+		Traditionally, computers have been designed with the assumption that
+		English will be the language (or at least, Latin will be the script) in
+		which users will communicate with the system. Only in recent years, we
+		have seen a number of regional teams springing up in all corners of
+		India and her neighbouring countries, each team wanting to "localise"
+		computer software and interfaces for their own languages and cultures.
+		Free Software has become a natural choice for these teams, since it
+		gives them the power and (legal) right to modify the software so as to 
+		suit their own language and cultural nuances.
+		</para>
+		<para>
+		However, documentation regarding the process of localisation is
+		extremely sparse, and since the nature of localisation requires a
+		considerable amount of cross-domain knowledge, things are made all the
+		more difficult. The first major stumbling block that a localisation team
+		usually faces is when they try to come up with a font. Localisation of
+		GNU/Linux into an Indic "locale" in a standards compliant way requires a
+		"special" kind of font, called an Open Type Font. The technology used in
+		an Open Type Font is comparatively new, and naturally, documentation is
+		sparse. The only significant piece of documentation that deals with the
+		process of creating Open Type Fonts for Indic languages is specific to a
+		certain proprietary tool running on a certain proprietary platform. This 
+		document tries to outline the process of converting legacy Indic fonts 
+		into Open Type fonts, using a Free Software tool called FontForge (formerly 
+		called pfaedit). 
+		</para>
+		<para>
+		However, before someone embarks on a mission of making/converting an
+		Open Type font, he/she must also be familiar with at least the basics of
+		Unicode and typography. So the document also contains a basic level
+		introduction to Unicode and typography. Moreover, accompanying the
+		document are two fonts (one for the Bangla script and another for
+		the Devanagari script), which should serve as examples. 
+		</para>
+		<para>
+		Also, a few video clips, illustrating the basic operations in fontforge
+		(importing/exporting fonts, adding OpenType tables, etc) are also 
+		included with the document.
+		</para>
+		<para>
+		The document is Free (as in Free Speech), and is licensed under the GNU 
+		Free Documentation License (<acronym>GFDL</acronym>). Permission is 
+		granted to copy, distribute and/or modify this document under the terms of 
+		the GNU Free Documentation License, Version 1.1 or any later version 
+		published by the Free Software Foundation; with no Invariant Sections, 
+		with no Front-Cover Texts, and with no Back-Cover Texts. A copy of the 
+		license is located at <ulink url="http://www.gnu.org/licenses/fdl.html">
+		http://www.gnu.org/licences/fdl.html</ulink>.
+		</para>
+		<para>
+		The author would like to thank Sarai/CSDS for granting him the fellowship 
+		to work on the document. He is also grateful to the entire Indic computing 
+		computing community, especially the members of Ankur and the Free Bangla 
+		Fonts projects, who have been enthusiastically working for the sake of 
+		their own culture and language at the time when they should have been 
+		studying or sleeping.
+		</para>
+	</preface>
+
+	<chapter id="intro">
+		<title>Introduction - The Basics</title>
+		<para>
+		In this introductory chapter, I will be explaining (in brief) how a 
+		computer handles characters. This chapter deals with the concepts 
+		behind text encoding, codepages and the need for having a standardised 
+		text encoding system. However, please do always keep in mind that this 
+		is a very superficial treatment of the subject, just enough to get you 
+		started with minimal confusion. If you are interested in getting deep 
+		into subject, please look elsewhere.
+		</para>
+		<sect1 id="intro.texthandling">
+			<title>Text Handling - Inside a Computer</title>
+			<para>
+			Computers are stupid. They do not understand anything other than 
+			numbers. And when I say numbers, these are not the numbers that 
+			you and I use everyday. They only recognise numbers which look 
+			like 110010101, 10010111, etc. This is not very surprising, 
+			since computers were originally designed to process (or as we 
+			techies sometimes say, crunch) calculations involving extremely 
+			large numbers, which no sane human being was willing to do (always 
+			remember - lazyness is the mother of invention). Earliest 
+			computers had very little to do with text, and so as a result, 
+			even today, the computer understands nothing but numbers. And 
+			since the components of a computer ran on electricity, it was 
+			easier to handle information in terms of "On" or "Off" states, 
+			"On" represented "1" and Off represented "0". So internally, 
+			computers handled numbers as sequences of 1's and 0's, using 
+			the <emphasis>binary</emphasis> number system.
+			</para>
+			<para>
+			By now, you must be thinking - but how on earth do I do all those 
+			word processing and emailing in my computer ?? Well, as the 
+			computing age advanced, computer scientists devised a very clever 
+			way to handle text. They simply assigned an unique number to each 
+			and every alphabet in their script (which was - no prizes for 
+			guessing this correctly, Latin). So after this, when you told the 
+			computer - "Hey, I am giving you some textual data", and if you 
+			entered the number, say 64, the computer stored it internally as 
+			64, but displayed it to you as the character "A". Similarly, 
+			65 stood for "B", 66 for "C" and so on. Moreover, there were some 
+			special characters called "Control Characters" signifying space, 
+			carriage return, tab, etc  which instructed the computer to do 
+			<emphasis>visual</emphasis> adjustments to the displayed text.
+			</para>
 </book>
