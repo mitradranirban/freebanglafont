@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"/usr/share/sgml/docbook/xml-dtd-4.2/docbookx.dtd">
+
+
+<book>
+	<bookinfo>
+		<title>Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font</title>
+		<authorgroup>
+			<author>
+				<firstname>Sayamindu</firstname> <surname>Dasgupta</surname>
+				<affiliation>
+					<address><email>Sayamindu Dasgupta</email></address>
+					<orgname>Ankur Bangla Group</orgname>
+				</affiliation>
+			</author>
+		</authorgroup>
+
+		<edition>Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font, version 0.01</edition>
+
+			
+		<copyright>
+			<year>2004</year>
+			<holder>
+				Sayamindu Dasgupta,
+			</holder>
+		</copyright>
+
+		<legalnotice>
+			<para>
+				Permission is granted to copy, distribute and/or modify this document under the terms of the 
+				GNU Free Documentation License, Version 1.1 or any later version published by the Free 
+				Software Foundation; with no Invariant Sections , with no Front-Cover Texts , and with no 
+				Back-Cover Texts . A copy of the license is located at 
+				<ulink url="http://www.gnu.org/licenses/fdl.html">http://www.gnu.org/licences/fdl.html</ulink>.
+			</para>
+		</legalnotice>
+							
+					    
+		
+		
+		<subjectset>
+			<subject><subjectterm>Fonts</subjectterm></subject>
+			<subject><subjectterm>Typography</subjectterm></subject>
+			<subject><subjectterm>Localization</subjectterm></subject>
+		</subjectset>
+		
+	</bookinfo>
+
+</book>
