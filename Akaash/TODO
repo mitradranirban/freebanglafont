@@ -1,0 +1,21 @@
+:::'###::::'##:::'##::::'###:::::::'###:::::'######::'##::::'##:
+::'## ##::: ##::'##::::'## ##:::::'## ##:::'##... ##: ##:::: ##:
+:'##:. ##:: ##:'##::::'##:. ##:::'##:. ##:: ##:::..:: ##:::: ##:
+'##:::. ##: #####::::'##:::. ##:'##:::. ##:. ######:: #########:
+ #########: ##. ##::: #########: #########::..... ##: ##.... ##:
+ ##.... ##: ##:. ##:: ##.... ##: ##.... ##:'##::: ##: ##:::: ##:
+ ##:::: ##: ##::. ##: ##:::: ##: ##:::: ##:. ######:: ##:::: ##:
+..:::::..::..::::..::..:::::..::..:::::..:::......:::..:::::..::
+
+==============
+The TODO list
+==============
+ 
+  * Get rid of the known bugs (obviously ;)
+  * Release AkaashWide and AkaashSlanted
+  * Make a list of the Yuktakhars that are missing, and another list for
+    the yuktakhars that do not have the proper shapes.
+  * Add the isshwar sign, the currency mark, and the other crazy characters
+    in the Unicode specs.
+
+ 

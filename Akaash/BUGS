@@ -1,0 +1,19 @@
+:::'###::::'##:::'##::::'###:::::::'###:::::'######::'##::::'##:
+::'## ##::: ##::'##::::'## ##:::::'## ##:::'##... ##: ##:::: ##:
+:'##:. ##:: ##:'##::::'##:. ##:::'##:. ##:: ##:::..:: ##:::: ##:
+'##:::. ##: #####::::'##:::. ##:'##:::. ##:. ######:: #########:
+ #########: ##. ##::: #########: #########::..... ##: ##.... ##:
+ ##.... ##: ##:. ##:: ##.... ##: ##.... ##:'##::: ##: ##:::: ##:
+ ##:::: ##: ##::. ##: ##:::: ##: ##:::: ##:. ######:: ##:::: ##:
+..:::::..::..::::..::..:::::..::..:::::..:::......:::..:::::..::
+
+===================
+Known list of BUGS 
+===================
+
+  * Problems are cropping up in Yudit - the clusters are not being parsed properly (it seems).
+  * Many of the Yuktakhars ending with Na, Ma, and Ba are yet to be done (I hate designing glyphs:).
+  * The glyphs are not getting lined up properly - I need an experienced font developer to help me out.
+  * Some of the glyphs for the Yuktakhars are not correct - I need more glyphs :S.
+ 
+  
