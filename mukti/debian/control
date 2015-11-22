@@ -1,0 +1,16 @@
+Source: fonts-mukti
+Section: fonts
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Origininal-Maintainer: Dr Anirban Mitra <mitradranirban@outlook.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: fonts-mukti
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Mukti free OpenType Bengali Font
+ This a free bengali OpenType font
+ created using gpl'ed Akruti 
+ Multimedia Glyphs. It is modified
+ from Mukti Narrow font

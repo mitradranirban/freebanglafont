@@ -1,0 +1,12 @@
+fonts-mukti for Debian
+----------------------
+
+* created using MuktiNarrow*ttf created for Free bangla Font Project
+ * now edited using fontforge and source saved in .sfd format
+ * converted to cubic spline from quadratic ones
+ * various bugfixes as suggested by fontforge
+ * Removed MS Volt files
+
+
+ -- Dr Anirban Mitra <mitradranirban@outlook.com>  Tue, 10 Nov 2015 07:16:51 +0530
+
