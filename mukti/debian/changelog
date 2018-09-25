@@ -1,5 +1,12 @@
+
+fonts-mukti (2.1-0ubuntu1) bionic; urgency=low
+
+ * added Open type tables to font
+  -- Dr Anirban Mitra <mitradranirban@outlook.com> Wed Sep 19 20:02:43 IST 2018 
+
 fonts-mukti (2.0-0ubuntu1) trusty; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
  -- Dr Anirban Mitra <mitradranirban@outlook.com>  Tue, 10 Nov 2015 07:16:51 +0530
+
