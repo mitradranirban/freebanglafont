@@ -1,0 +1,16 @@
+fonts-mukti (3.0) UNRELEASED; urgency=low
+
+  
+  * Change in EM square from 2048 to 1000
+  * Upgrade fto Unicode 14.0 standard for Bengali
+  * shift from version 1 to version 2 of Bengali OpenType specification
+  * support for Assamese language
+  * support for both traditional and modern form of conjunts 
+  * addition of vedic stress marks
+  * removal of Latin glyphs
+  * removal of references and over lapping 
+  * addition of missing conjuncts 
+  * various bugfixes 
+
+
+ -- Dr Anirban Mitra <mitra_anirban@yahoo.co.in>  Thu, 20 Jan 2022 21:42:16 +0530
