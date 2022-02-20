@@ -1,0 +1,34 @@
+2022-02-21 Anirban Mitra <mitra_anirban@yahoo.co.in>
+ * Revamped website
+ * updated links 
+ * Added MitraMono Jamul and Changed MuktiNarrow to Mukti in Side bar and links 
+
+
+
+2006-10-05  Baishampayan Ghose  <b.ghose@gnu.org>
+
+	* volunteers.html: Added a supporters section and added Omi Azad's
+	name.
+	* docs.html: Fixed a typo.
+
+2006-05-09  Baishampayan Ghose  <b.ghose@gnu.org>
+
+	* downloads.html - Fixed incorrect link to Likhan fonts, thanks to
+	Shoubhik Mukhopadhyay <shoubhikm@gmail.com>
+
+2006-04-24  Baishampayan Ghose  <b.ghose@gnu.org>
+
+	* robots.txt - Added a robots.txt
+	* *.html - Added appropriate META tags
+	* volunteers.html - Fixed a mailto: link
+	* index.html - Changed Unicode 4.0 to 4.1.0
+
+2006-04-24  Baishampayan Ghose  <b.ghose@gnu.org>
+
+	* donors.html - Fixed the BangTeX URL
+
+2006-04-24  Baishampayan Ghose  <b.ghose@gnu.org>
+
+	* Initial import of the new website after taking over the
+	maintainership from Sayamindu.
+
